@@ -15,7 +15,7 @@ class TestReturnValue(unittest.IsolatedAsyncioTestCase):
 # Тестирование побочных эффектов
 class TestSideEffects(unittest.IsolatedAsyncioTestCase):
     async def test_side_effects(self):
-        numbers = [1, 2, 3, 4, 5]
+        numbers = [1, 2, 3, 4, 5] #fdfgfhgfgfdbg
         await calculate_sum(numbers)
         # Проверяем, что список не изменился после вызова функции
         self.assertEqual(numbers, [1, 2, 3, 4, 5])
